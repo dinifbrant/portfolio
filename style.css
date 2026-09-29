@@ -781,3 +781,438 @@ footer p {
         text-align: center;
     }
 }
+
+/* =========================
+   HOME - POLISH
+========================= */
+
+#home {
+    position: relative;
+    overflow: hidden;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    background-color: rgba(217, 149, 173, 0.15);
+
+    border-radius: 50%;
+
+    top: -100px;
+    right: -80px;
+}
+
+#home::after {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    background-color: rgba(183, 110, 138, 0.10);
+
+    border-radius: 50%;
+
+    bottom: -70px;
+    left: -50px;
+}
+
+.hero-text,
+.hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text > p:first-child {
+    letter-spacing: 1px;
+}
+
+.hero-text h3 {
+    line-height: 1.5;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    border: 2px solid rgba(217, 149, 173, 0.35);
+
+    border-radius: 50%;
+
+    top: -10px;
+    left: -10px;
+
+    z-index: -1;
+}
+
+.hero-image img {
+    animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+/* =========================
+   ABOUT - POLISH
+========================= */
+
+#about {
+    position: relative;
+    overflow: hidden;
+}
+
+#about h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#about h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 3px;
+
+    margin: 10px auto 0;
+
+    background-color: #d995ad;
+
+    border-radius: 10px;
+}
+
+#about p {
+    background-color: #fff8fb;
+
+    padding: 20px 25px;
+
+    border-radius: 16px;
+
+    border: 1px solid #f3dce6;
+
+    box-shadow: 0 6px 20px rgba(190, 130, 155, 0.08);
+
+    transition: 0.3s;
+}
+
+#about p:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(190, 130, 155, 0.14);
+}
+
+/* =========================
+   SKILLS - POLISH
+========================= */
+
+#skills {
+    position: relative;
+    overflow: hidden;
+}
+
+#skills h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#skills h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 3px;
+
+    margin: 10px auto 0;
+
+    background-color: #d995ad;
+
+    border-radius: 10px;
+}
+
+.skill-card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-top: 4px solid #d995ad;
+}
+
+.skill-card::before {
+    content: "";
+
+    position: absolute;
+
+    width: 80px;
+    height: 80px;
+
+    background-color: rgba(217, 149, 173, 0.08);
+
+    border-radius: 50%;
+
+    top: -35px;
+    right: -30px;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover::before {
+    transform: scale(1.5);
+}
+
+.skill-card h3 {
+    position: relative;
+}
+
+.skill-card p {
+    position: relative;
+
+    line-height: 1.7;
+}
+
+/* =========================
+   EXPERIENCE - POLISH
+========================= */
+
+#experience {
+    position: relative;
+    overflow: hidden;
+}
+
+#experience h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#experience h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 3px;
+
+    margin: 10px auto 0;
+
+    background-color: #d995ad;
+
+    border-radius: 10px;
+}
+
+.experience-card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-left: 5px solid #d995ad;
+
+    text-align: left;
+}
+
+.experience-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: rgba(217, 149, 173, 0.08);
+
+    border-radius: 50%;
+
+    right: -40px;
+    bottom: -40px;
+
+    transition: 0.3s;
+}
+
+.experience-card:hover::after {
+    transform: scale(1.4);
+}
+
+.experience-card h3,
+.experience-card p {
+    position: relative;
+    z-index: 1;
+}
+
+.experience-card p:first-of-type {
+    color: #c77d9a;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+/* =========================
+   EDUCATION - POLISH
+========================= */
+
+#education {
+    position: relative;
+    overflow: hidden;
+}
+
+#education h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#education h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 3px;
+
+    margin: 10px auto 0;
+
+    background-color: #d995ad;
+
+    border-radius: 10px;
+}
+
+.education-card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-top: 5px solid #d995ad;
+}
+
+.education-card::before {
+    content: "🎓";
+
+    position: absolute;
+
+    font-size: 70px;
+
+    opacity: 0.08;
+
+    right: 15px;
+    bottom: 5px;
+}
+
+.education-card h3,
+.education-card p {
+    position: relative;
+    z-index: 1;
+}
+
+.education-card p:last-child {
+    color: #c77d9a;
+
+    font-weight: 600;
+}
+
+/* =========================
+   CONTACT - POLISH
+========================= */
+
+#contact {
+    position: relative;
+    overflow: hidden;
+}
+
+#contact h2 {
+    position: relative;
+    display: inline-block;
+}
+
+#contact h2::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 3px;
+
+    margin: 10px auto 0;
+
+    background-color: #d995ad;
+
+    border-radius: 10px;
+}
+
+.contact-info p {
+    transition: 0.3s;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-info p::before {
+    content: "";
+
+    position: absolute;
+
+    width: 70px;
+    height: 70px;
+
+    background-color: rgba(217, 149, 173, 0.10);
+
+    border-radius: 50%;
+
+    right: -25px;
+    top: -25px;
+}
+
+.contact-info p:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(190, 130, 155, 0.16);
+}
+
+.contact-info strong,
+.contact-info p {
+    position: relative;
+}
+
+.contact-buttons a {
+    min-width: 180px;
+
+    font-weight: 500;
+}
+
+.contact-buttons a:first-child {
+    background: linear-gradient(
+        135deg,
+        #d995ad,
+        #c77d9a
+    );
+}
+
+.contact-buttons a:last-child {
+    background-color: #765866;
+}
+
+.contact-buttons a:hover {
+    transform: translateY(-4px);
+}
